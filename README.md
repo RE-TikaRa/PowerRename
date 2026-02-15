@@ -38,6 +38,24 @@
 PowerToys.PowerRename.exe "C:\path\a.txt" "C:\path\b.txt"
 ```
 
+## 获取方式
+
+### 方式一：克隆仓库后自行构建
+
+```bat
+git clone <你的仓库地址>
+cd PowerRename
+msbuild PowerRename.sln /t:Restore /p:RestorePackagesConfig=true
+msbuild PowerRename.sln /p:Configuration=Release /p:Platform=x64
+```
+
+构建完成后，可执行文件位于 `x64\Release\WinUI3Apps`。
+
+### 方式二：从 Releases 直接下载 ZIP
+
+在仓库 Releases 页面下载发行包：`PowerRename-Standalone-x64-Release.zip`。  
+本仓库本地打包输出路径为：`release\PowerRename-Standalone-x64-Release.zip`。
+
 ## 架构概览
 
 `PowerRename.sln` 主要包含以下工程：
