@@ -1,0 +1,13 @@
+namespace PowerRenameUI
+{
+    [default_interface] runtimeclass SettingsPage : Microsoft.UI.Xaml.Controls.Page
+    {
+        SettingsPage();
+        Boolean IsContextMenuRegistered;
+        Boolean ShowInExtendedContextMenu;
+        Boolean PersistState;
+        Boolean MRUEnabled;
+        Boolean UseBoostLib;
+        String StatusMessage;
+    }
+}

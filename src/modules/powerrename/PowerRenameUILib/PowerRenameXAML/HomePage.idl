@@ -1,0 +1,7 @@
+namespace PowerRenameUI
+{
+    [default_interface] runtimeclass HomePage : Microsoft.UI.Xaml.Controls.Page
+    {
+        HomePage();
+    }
+}

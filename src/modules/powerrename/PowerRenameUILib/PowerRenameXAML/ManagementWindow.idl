@@ -1,0 +1,7 @@
+namespace PowerRenameUI
+{
+    [default_interface] runtimeclass ManagementWindow : Microsoft.UI.Xaml.Window
+    {
+        ManagementWindow();
+    }
+}
